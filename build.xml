@@ -145,28 +145,6 @@
             maxPoll="${maxPoll}"
             retrieveTarget="${path}"
             unpackaged="${path}/package.xml"/>
-        <delete>
-            <fileSet dir="${path}/settings/">
-                <include name="PersonalJourney.settings"/>
-                <include name="Search.settings"/>
-                <!--<include name="OrgPreference.settings"/>-->
-            </fileSet>
-            <fileSet dir="${path}/permissionsets/">
-                <include name="Process_Builder.permissionset"/>
-            </fileSet>
-        </delete>
-        <replaceregexp
-            match="${listView-regexp}"
-            replace=""
-            flags="g">
-            <fileset dir="${path}/objects/">
-                <include name="*.object"/>
-            </fileset>
-        </replaceregexp>
-        <sound>
-            <success source="${success-sound}"/>
-            <fail source="${success-sound}"/>
-        </sound>
     </target>
 
     <target name="validate">
