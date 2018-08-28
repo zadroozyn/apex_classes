@@ -1,12 +1,12 @@
 set -ev
 
 ANT_ROOT="$TRAVIS_BUILD_DIR"
+SRC_ROOT="$TRAVIS_BUILD_DIR/src"
 
 cd $ANT_ROOT
 ant retrieve
 
-
-ANT_ROOT="$TRAVIS_BUILD_DIR/src"
+cd $SRC_ROOT
 git add .
 git commit -m "prodSync [ci skip]"
 git push
