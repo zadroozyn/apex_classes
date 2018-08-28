@@ -1,1 +1,0 @@
-public class BatchCancellationException extends Exception {}

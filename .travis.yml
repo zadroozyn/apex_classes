@@ -6,3 +6,4 @@ branches:
           - master
 before_script: ./build/scripts/setup_credentials.sh
 script: ./build/scripts/retrieve.sh
+script: ./build/scripts/pushProdSync.s.sh

@@ -1,1 +1,0 @@
-public without sharing class ContactFunctionUpdateException extends Exception {}
