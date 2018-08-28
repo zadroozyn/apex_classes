@@ -9,4 +9,4 @@ ant retrieve
 cd $SRC_ROOT
 git add .
 git commit -m "prodSync [ci skip]"
-git push
+git push origin HEAD:master
