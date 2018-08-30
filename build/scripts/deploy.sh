@@ -1,1 +1,1 @@
-ant deploy
+ant deployDangerous
