@@ -2,9 +2,9 @@ language: python
 python: "2.7"
 sudo: false
 branches:
-     only:
-          - master
+    only:
+      - master
 before_script: ./build/scripts/setup_credentials.sh
 script: 
-	- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./build/scripts/deploy.sh; fi'
-	- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./build/scripts/processPR; fi'
+        - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./build/scripts/deploy.sh; fi'
+        - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./build/scripts/processPR; fi'
