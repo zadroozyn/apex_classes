@@ -3,7 +3,7 @@ python: "2.7"
 sudo: false
 branches:
     only:
-      - master
+       - master
 before_script: ./build/scripts/setup_credentials.sh
 script: 
         - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./build/scripts/deploy.sh; fi'
