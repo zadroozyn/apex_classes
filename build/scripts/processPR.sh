@@ -15,7 +15,7 @@ cd $SRC_ROOT
 git status
 git add .
 git commit -m "prodSync [ci skip]"
-git push
+git push --force
 
 cd $ANT_ROOT
 ant validate
