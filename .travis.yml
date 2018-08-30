@@ -7,7 +7,7 @@ branches:
 before_install:
 - git config --global user.name "Travis CI"
 - git config --global push.default simple
-- git remote set-url origin https://${GH_TOKEN}@github.com/zadroozyn/apex_classes.git
+- git remote set-url origin https://$GH_TOKEN@github.com/zadroozyn/apex_classes.git
 before_script: ./build/scripts/setup_credentials.sh
 script: 
         - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./build/scripts/deploy.sh; fi'
