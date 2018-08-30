@@ -8,5 +8,5 @@ branches:
 	  - prod_sync
 before_script: ./build/scripts/setup_credentials.sh
 script: 
-	- if [ "$TRAVIS_BRANCH" = "master" ]; then ./build/scripts/deploy.sh fi
-	- if [ "$TRAVIS_BRANCH" = "prod_sync" ]; then ./build/scripts/pushProdSync.sh fi
+	- if [ "$TRAVIS_BRANCH" = "master" ]; then ./build/scripts/deploy.sh; fi
+	- if [ "$TRAVIS_BRANCH" = "prod_sync" ]; then ./build/scripts/pushProdSync.sh; fi
