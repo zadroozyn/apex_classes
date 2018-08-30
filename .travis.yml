@@ -6,10 +6,6 @@ branches:
      only:
           - master
 	  - prod_sync
-notifications:
-  email: false
-  email:
-      on_failure: always
 before_script: ./build/scripts/setup_credentials.sh
 script: 
 	if [ "$TRAVIS_BRANCH" = "master" ]; then ./build/scripts/deploy.sh
