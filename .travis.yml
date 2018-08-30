@@ -4,10 +4,6 @@ sudo: false
 branches:
      only:
           - master
-notifications:
-  email: false
-  email:
-      on_failure: always
 before_script: ./build/scripts/setup_credentials.sh
 script: 
 	- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./build/scripts/deploy.sh; fi'
